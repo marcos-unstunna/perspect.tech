@@ -1,0 +1,56 @@
+html,
+body,
+#root {
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    background: #efefef73;
+}
+
+html {
+    overflow:hidden;
+}
+
+@font-face {
+    font-family: 'Product';
+    src: url('./fonts/ProductSansBold.ttf')
+    ;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product';
+  src: url('./fonts/ProductSansRegular.ttf')
+  ;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product';
+    src: url('./fonts/ProductSansRegular.ttf')
+    ;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity:1;
+    z-index:999;
+    transition: ease-in-out .3s;
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled {
+    opacity:0;
+    z-index:-1;
+}
